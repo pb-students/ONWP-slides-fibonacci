@@ -20,8 +20,8 @@ inż. Filip Rutkowski, inż. Kasper Seweryn
 </span>
 
 ---
-
-## transition: slide-left
+transition: slide-left
+---
 
 # Czym jest ciąg Fibonacciego?
 
@@ -272,11 +272,9 @@ Mamy 10 palcow, gdzie 8 z nich skladaja sie z 3 paliczkow, oraz mamy 2 kciuki kt
 -->
 
 ---
-
 transition: slide-up
 layout: image-right
 image: https://unsplash.com/photos/NgDapgpAiTE/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg2ODYyNTgzfA&force=true&w=1920
-
 ---
 
 # Porozmawiajmy o ananasach! 🍍🍍🍍
@@ -335,10 +333,8 @@ Tonacja wykorzystana tutaj to e dur, w duzym skrocie, tonacja to zbior dzwiekow 
 -->
 
 ---
-
 layout: image-right
 image: https://www.metalnews.pl/images/2021/05/Tool-Lateralus-okladka.jpg
-
 ---
 
 # Ciąg Fibonacciego i złota proporcja w muzyce
@@ -369,8 +365,8 @@ Wspaniałym przykładem zastosowania ciągu Bonifacego jest piosenka Lateralus, 
 -->
 
 ---
-
-## layout: two-cols
+layout: two-cols
+---
 
 # Matematyka vs Informatyka
 
@@ -401,14 +397,12 @@ const fib2 = (n: number, nums = [1, 1]) => {
 <img src="/meme.png" class="h-128">
 
 ---
-
 layout: center
 class: text-center
-
 ---
 
 # Dziękujemy!
 
-<div class="text-xs text-left">
-
-</div>
+<a href="https://github.com/pb-students/ONWP-slides-fibonacci" target="_blank" class="opacity-80 hover:opacity-100 !border-none group">
+  <logos-github-icon class="group-hover:scale-110 duration-250 transform translate-z-1" />
+</a>
