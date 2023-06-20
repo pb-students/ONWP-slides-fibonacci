@@ -6,7 +6,7 @@ dependencies:
     version: 0.6.0-rc.5(vue-dompurify-html@4.1.4)
   '@slidev/cli':
     specifier: ^0.42.4
-    version: 0.42.4(postcss@8.4.24)
+    version: 0.42.4(playwright-chromium@1.35.1)(postcss@8.4.24)
   '@slidev/theme-default':
     specifier: latest
     version: 0.21.2
@@ -21,6 +21,9 @@ devDependencies:
   '@iconify-json/logos':
     specifier: ^1.1.33
     version: 1.1.33
+  playwright-chromium:
+    specifier: ^1.35.1
+    version: 1.35.1
 
 packages:
 
@@ -771,7 +774,7 @@ packages:
       picomatch: 2.3.1
     dev: false
 
-  /@slidev/cli@0.42.4(postcss@8.4.24):
+  /@slidev/cli@0.42.4(playwright-chromium@1.35.1)(postcss@8.4.24):
     resolution: {integrity: sha512-W70ozMqCakq/IFB2cjNVdJQ/I4Hhicxr0qL8IbvkbMtYFqDsGVRxy6ZCfSEVBRn7y4/6slKntOFZLSVps2iJFg==}
     engines: {node: '>=14.0.0'}
     hasBin: true
@@ -815,6 +818,7 @@ packages:
       open: 8.4.2
       pdf-lib: 1.17.1
       plantuml-encoder: 1.4.0
+      playwright-chromium: 1.35.1
       postcss-nested: 6.0.1(postcss@8.4.24)
       prismjs: 1.29.0
       prompts: 2.4.2
@@ -3511,6 +3515,19 @@ packages:
   /plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
     dev: false
+
+  /playwright-chromium@1.35.1:
+    resolution: {integrity: sha512-bPuWIk/DYWtrg10ajcc9cZLo5s9XQrs6JF6wwiieqZ73rCG3PLVEm0RX8fCUzziuEAhYsoL09UNuKSKv7pKz9A==}
+    engines: {node: '>=16'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      playwright-core: 1.35.1
+
+  /playwright-core@1.35.1:
+    resolution: {integrity: sha512-pNXb6CQ7OqmGDRspEjlxE49w+4YtR6a3X6mT1hZXeJHWmsEz7SunmvZeiG/+y1yyMZdHnnn73WKYdtV1er0Xyg==}
+    engines: {node: '>=16'}
+    hasBin: true
 
   /popmotion@11.0.5:
     resolution: {integrity: sha512-la8gPM1WYeFznb/JqF4GiTkRRPZsfaj2+kCxqQgr2MJylMmIKUwBfWW8Wa5fml/8gmtlD5yI01MP1QCZPWmppA==}
