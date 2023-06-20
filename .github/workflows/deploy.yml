@@ -8,12 +8,20 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: pnpm
+
+      - uses: pnpm/action-setup@v2
+        name: Install pnpm
+        id: pnpm-install
+        with:
+          version: 7
+          run_install: false
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+
       - name: Build
         run: pnpm build --base ONWP-slides-fibonacci
+
       - name: Deploy pages
         uses: crazy-max/ghaction-github-pages@v2
         with:
