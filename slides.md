@@ -5,14 +5,12 @@ class: text-center
 highlighter: shiki
 lineNumbers: false
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
+  Created by Kasper (wvffle) Seweryn and Filip Rutkowski
 drawings:
   persist: false
 transition: slide-left
-title: Welcome to Slidev
+title: Ciąg Fibonacciego w naturze i muzyce
+download: true
 ---
 
 # Ciąg Fibonacciego w naturze i muzyce
@@ -22,8 +20,8 @@ inż. Filip Rutkowski, inż. Kasper Seweryn
 </span>
 
 ---
-transition: slide-left
----
+
+## transition: slide-left
 
 # Czym jest ciąg Fibonacciego?
 
@@ -41,15 +39,13 @@ $$
 Ciąg ten został odkryty przez włoskiego matematyka &mdash; Leonarda z Pizy, który uchodzi za jednego z najwybitniejszych matematyków swoich czasów.
 </p>
 
-
-
 <p v-click> Definicja dla informatyków :)
 
 ```python
 def fibonacci(n):
   if n < 2:
     return 1
-  
+
   return fibonacci(n - 1) + fibonacci(n - 2)
 
 ```
@@ -61,9 +57,11 @@ Czasami również rozpoczyna się od 0 i 1.
 
 Mamy również definicję dla informatyków.
 -->
+
 ---
 
 # Zabawa z Fibonaccim
+
 Co się wydarzy gdy podniesiemy liczy z ciągu Fibonacciego do drugiej potęgi?
 
 $$
@@ -208,8 +206,8 @@ $$
 
 <p v-click>
 
-Im większe liczby dzielimy, tym wynik jest dokładniejszy. Istotną kwestią jest to, że zarówno liczby Fibonacciego, jak i złota proporcja, 
-występują bardzo często w otaczającym nas świecie. 
+Im większe liczby dzielimy, tym wynik jest dokładniejszy. Istotną kwestią jest to, że zarówno liczby Fibonacciego, jak i złota proporcja,
+występują bardzo często w otaczającym nas świecie.
 
 </p>
 
@@ -274,9 +272,11 @@ Mamy 10 palcow, gdzie 8 z nich skladaja sie z 3 paliczkow, oraz mamy 2 kciuki kt
 -->
 
 ---
+
 transition: slide-up
 layout: image-right
 image: https://unsplash.com/photos/NgDapgpAiTE/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjg2ODYyNTgzfA&force=true&w=1920
+
 ---
 
 # Porozmawiajmy o ananasach! 🍍🍍🍍
@@ -286,7 +286,9 @@ image: https://unsplash.com/photos/NgDapgpAiTE/download?ixid=M3wxMjA3fDB8MXxhbGx
 ---
 
 # Ciąg Fibonacciego i złota proporcja w naturze
+
 Złoty podział występuje w:
+
 - Kształtach spiralnych galatktyk
 - Formujących się huraganach
   <div class="flex">
@@ -303,13 +305,12 @@ Złoty podział występuje w:
     <img src="https://gofiguremath.org/img/Leaf-Growth-13.png">
   </div>
 
-
 ---
 
 # Ciąg Fibonacciego i złota proporcja w muzyce
 
-Kolejną bardzo ciekawą informacją jest to, że ciąg Fibonacciego można stosować także w muzyce. 
-Kompozytorzy już dawno temu odkryli, że umiejętne wykorzystanie danych z ciągu, może ułatwić stworzenie kompozycji na bardzo 
+Kolejną bardzo ciekawą informacją jest to, że ciąg Fibonacciego można stosować także w muzyce.
+Kompozytorzy już dawno temu odkryli, że umiejętne wykorzystanie danych z ciągu, może ułatwić stworzenie kompozycji na bardzo
 wysokim poziomie. Jednym z najbardziej znanych przykładów jest tutaj Canon D-dur Johanna Pachelbela, na któym bazuje wiele znanych współczesnych utworów,
 jak na przykład "No Women, No cry" Boba Marleya, albo "Let It Be" zespołu "The Beatles".
 
@@ -319,7 +320,7 @@ jak na przykład "No Women, No cry" Boba Marleya, albo "Let It Be" zespołu "The
 Canon D-dur,Green-dayBasked base,
 No Use for a Name - Laverne and Shirley
 
-Ciąg fibonacciego ma zastosowanie także w muzyce, mozna go wykorzystac 
+Ciąg fibonacciego ma zastosowanie także w muzyce, mozna go wykorzystac
 na rozne sposoby, jak chociazby poprzez stosowanie liczby zarganych nut w jednym takcie(czyli raz dwa trzy cztery na przyklad) w formie liczb fibonacciego, jak i poprzez wysokosci dzwiekow.
 -->
 
@@ -334,11 +335,14 @@ Tonacja wykorzystana tutaj to e dur, w duzym skrocie, tonacja to zbior dzwiekow 
 -->
 
 ---
+
 layout: image-right
 image: https://www.metalnews.pl/images/2021/05/Tool-Lateralus-okladka.jpg
+
 ---
 
 # Ciąg Fibonacciego i złota proporcja w muzyce
+
 TOOL &mdash; Lateralus
 
 <div class="text-xl">
@@ -351,7 +355,6 @@ TOOL &mdash; Lateralus
 <span class="text-gray-700">Rea</span><span class="text-red-600">ching</span> <span class="text-gray-700">out</span> <span class="text-red-600">to</span> <span class="text-gray-700">me</span><br>
 <span class="text-red-600">Lets</span> <span class="text-gray-700">me</span> <span class="text-red-600">see</span>
 </div>
-
 
 https://youtu.be/Y7JG63IuaWs?t=94
 
@@ -366,11 +369,12 @@ Wspaniałym przykładem zastosowania ciągu Bonifacego jest piosenka Lateralus, 
 -->
 
 ---
-layout: two-cols
----
+
+## layout: two-cols
 
 # Matematyka vs Informatyka
-Interaktywny przykład 
+
+Interaktywny przykład
 
 ```ts
 const PHI = 1.618033988749, SQRT5_I = 1 / Math.sqrt(5)
@@ -383,11 +387,12 @@ const fib2 = (n: number, nums = [1, 1]) => {
   if (n == 0) return 0
   if (n < 2) return 1
   for (let count = 0; count < n - 2; ++count) {
-  	[nums[0], nums[1]] = [nums[1], nums[0] + nums[1]] 
+  	[nums[0], nums[1]] = [nums[1], nums[0] + nums[1]]
   }
   return nums[1]
 }
 ```
+
 <div class="flex items-center flex-col p-4 gap-4">
   <OptimizedFib />
 </div>
@@ -395,16 +400,15 @@ const fib2 = (n: number, nums = [1, 1]) => {
 
 <img src="/meme.png" class="h-128">
 
-
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Dziękujemy!
 
 <div class="text-xs text-left">
-
-
 
 </div>
